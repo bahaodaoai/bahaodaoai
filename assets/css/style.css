@@ -9,7 +9,6 @@ html {
     font-family: 'Helvetica, Arial', sans-serif;
     font-size: 15px;
     overflow-x: hidden;
-    -webkit-text-size-adjust: 100%;
     display: block;
 }
 .col-white{
@@ -20,7 +19,7 @@ html {
 }
 .col-half {
     float: left;
-    width: 50% !important;
+    width: 50%;
 }
 .col-3{
     float: left;
@@ -65,7 +64,7 @@ html {
 }
 .header .subnav {
     list-style-type: none;
-
+    background-color: #fff;
 }
 .more:hover .subnav a{
     display: inline-block;
@@ -105,15 +104,25 @@ html {
     color: #fff;
     font-size: 13px;
 }
-.search-btn{
-    color: #fff;
+
+.search, .s-menu {
     float: right;
+}
+.s-menu {
+    display: none;
+}
+.search-btn, .s-menu-btn{
+    color: #fff;
     line-height: 46.5px;
     padding: 0 23px;
 }
 .search-btn:hover{
     background-color: #f44336;
     cursor: pointer;
+}
+.s-menu-btn:hover {
+    background-color: #ccc;
+    color: #000;
 }
 
 #slider {
@@ -354,7 +363,6 @@ input[type="text"], input[type="email"] {
 .modalContainer{
     width: 900px;
     background-color: #fff;
-    max-width: calc(100% - 32px);
     animation: modal 0.4s ease;
 }
 .modal-header {

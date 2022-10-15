@@ -2,29 +2,35 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <script src="https://kit.fontawesome.com/212cc3453c.js" crossorigin="anonymous"></script>
     <title>BAND</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, max-scale=1.0">
+    <script src="https://kit.fontawesome.com/212cc3453c.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" class = "btn" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/fontawesome-free-6.2.0-web/css/solid.min.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
 </head>
 <body>
     <div class="main">
         <!-- header -->
         <div class="header clear">
-            <div class="nav"><a class = "btn" href="#">Home</a></div>
-            <div class="nav"><a class = "btn" href="#Band">Band</a></div>
-            <div class="nav"><a class = "btn" href="#Tour">Tour</a></div>
-            <div class="nav"><a class = "btn" href="#Contact">Contact</a></div>
+            <div class="nav hide-when-click-moblie"><a class = "btn" href="#">Home</a></div>
+            <div class="nav hide-when-click-moblie"><a class = "btn" href="#Band">Band</a></div>
+            <div class="nav hide-when-click-moblie"><a class = "btn" href="#Tour">Tour</a></div>
+            <div class="nav hide-when-click-moblie"><a class = "btn" href="#Contact">Contact</a></div>
             <div class="nav more">
-                <a class = "btn" href="#">More <i class="fa-solid fa-caret-down more-down"></i></a>
+                <a class = "btn">More <i class="fa-solid fa-caret-down more-down"></i></a>
                 <ul class="subnav">
-                    <li><a class="btn" href="#">Merchandise</a></li><li><a class="btn" href="#">Extras</a></li><li><a class="btn" href="#">Media</a></li>
+                    <li><a class="btn hide-when-click-moblie" href="#">Merchandise</a></li>
+                    <li><a class="btn hide-when-click-moblie" href="#">Extras</a></li>
+                    <li><a class="btn hide-when-click-moblie" href="#">Media</a></li>
                 </ul>
             </div>
             <div class="search"><i class="fa-solid fa-magnifying-glass search-btn"></i></div>
-        </div><div id="slider">
+            <div class="s-menu"><i class="fa-solid fa-bars s-menu-btn"></i></div>
+        </div>
+        
+        <div id="slider">
             <div class="slider-content p-abs">
                 <h2 class="slider-header">Chicago</h2>
                 <p class="slider-text">Thank you, Chicago - A night we won't forget.</p>
@@ -41,15 +47,15 @@
             <p class="about-band">We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
             
             <div class="members row clear">
-                <div class="col-3 mem">
+                <div class="col-3 mem s-col-ful">
                     <p class="name">Name</p>
                     <img src="./assets/img/bandmember.jpg" alt="member's img">
                 </div>
-                <div class="col-3 mem">
+                <div class="col-3 mem s-col-ful">
                     <p class="name">Name</p>
                     <img src="./assets/img/bandmember.jpg" alt="member's img">
                 </div>
-                <div class="col-3 mem">
+                <div class="col-3 mem s-col-ful">
                     <p class="name">Name</p>
                     <img src="./assets/img/bandmember.jpg" alt="member's img">
                 </div>
@@ -78,7 +84,7 @@
                     </li>
                 </ul>
                 <div class="row clear list-tickets">
-                    <div class="col-3 ticket">
+                    <div class="col-3 ticket s-col-ful">
                         <img src="./assets/img/newyork.jpg" alt="ticket-img" class="ticket-img">
                         <div class="ticket-content">
                             <p class="name-ticket">New York</p>
@@ -87,7 +93,7 @@
                             <a class="btn buy-ticket js-buy-ticket">Buy Tickets</a>
                         </div>
                     </div>
-                    <div class="col-3 ticket">
+                    <div class="col-3 ticket s-col-ful">
                         <img src="./assets/img/paris.jpg" alt="ticket-img" class="ticket-img">
                         <div class="ticket-content">
                             <p class="name-ticket">Paris</p>
@@ -96,7 +102,7 @@
                             <a class="btn buy-ticket js-buy-ticket">Buy Tickets</a>
                         </div>
                     </div>
-                    <div class="col-3 ticket">
+                    <div class="col-3 ticket s-col-ful">
                         <img src="./assets/img/sanfran.jpg" alt="ticket-img" class="ticket-img">
                         <div class="ticket-content">
                             <p class="name-ticket">San Francisco</p>
@@ -117,18 +123,18 @@
             </div>
             <div action="" class="contact-box">
                 <div class="row-none clear">
-                    <div class="col-half contact-detail">
+                    <div class="col-half s-col-ful contact-detail">
                         <p><i class="fa-solid fa-location-dot"></i>Chicago, US</p>
                         <p><i class="fa-solid fa-phone"></i>Phone: +00 151515</p>
                         <p><i class="fa-solid fa-envelope"></i>Email: mail@mail.com</p>
                     </div>
-                    <div class="col-half contact-form">
+                    <div class="col-half s-col-ful contact-form">
                         <form action="" class="form">
                             <div class="line1 clear">
-                                <div class="input clear col-half">
+                                <div class="input clear col-half s-col-ful">
                                     <input type="text" required placeholder="Name">
                                 </div>
-                                <div class="input clear col-half">
+                                <div class="input clear col-half s-col-ful">
                                     <input type="email" required placeholder="Email">
                                 </div>
                             </div>
@@ -213,5 +219,27 @@
         modal_container.addEventListener('click', function(event){
             event.stopPropagation()
         })
+    </script>
+    <script>
+        const header = document.querySelector('.header')
+        const menu = document.querySelector('.s-menu')
+        const header_height = header.clientHeight
+
+        menu.onclick = function(){
+            if (header.clientHeight === header_height) {
+                header.style.height = 'auto'
+            } else {
+                header.style.height = '46.5px'
+            }
+        }
+        const navs = document.querySelectorAll('.hide-when-click-moblie')
+        console.log(navs)
+        for (nav of navs) {
+            nav.onclick = function(){
+                if (!this.classList.contains('more')){
+                    header.style.height = '46.5px'
+                }
+            }
+        }
     </script>
 </html>

@@ -1,0 +1,98 @@
+/*pc*/
+@media (min-width: 1024px){
+
+}
+
+@media (min-width: 550px) and (max-width: 1000px) {
+    .modal {
+        align-items: start;
+    }
+    .modalContainer {
+        margin: 50px 0 0;
+        height: fit-content;
+        width: 500px;
+    }
+} 
+
+@media (min-width: 740px) and (max-width: 1023px) {
+    #slider {
+        margin-top: 45.5px;
+    }
+    .nav.more>a {
+        pointer-events: none;
+    }
+
+}
+
+@media (max-width: 739px) {
+    #slider {
+        margin-top: 45.5px;
+    }
+    .s-menu {
+        display: block;
+        position: fixed;
+        top: 0;
+        right: 0;
+        z-index: 2;
+    }
+    .search {
+        display: none;
+    }
+    .nav, .nav a{
+        width: 100%;
+    }
+    .header>div {
+        margin: -1px 0;
+    }
+    .nav:first-child {
+        margin: 1px 0;
+        width: fit-content;
+    }
+    .nav.more>a {
+        margin: -1px 0 0; 
+    }
+
+    .more:hover .subnav a{
+        height: 46.5px;
+        padding: 0 32px;
+        line-height: 46.5px;
+    }
+    .header {
+        overflow: hidden;
+        margin: -1px 0;
+        box-shadow: none;
+    }
+    .nav {
+        height: initial;
+    }
+    .s-col-ful {
+        width: 100%;
+    }
+    .mem img {
+        max-width: 60%;
+        margin-bottom: 16px;
+    }
+    #Band {
+        padding: 0 15px 48px;
+    }
+    #Tour .ticket{
+        margin-bottom: 16px;
+    }
+    .list-tickets {
+        padding: 32px 0 96px;
+    }
+    #Contact .line1 .input:first-child {
+        padding: 20px 8px 0;
+    }
+    #Contact button.btn.send-btn, a.btn.buy-ticket {
+        width: 100%;
+        text-align: center;
+    }
+    .modal {
+        align-items: start;
+    }
+    .modalContainer {
+        margin: 50px 10px 0;
+        height: fit-content;
+    }
+}
